@@ -75,11 +75,7 @@ header li {
     border-left: 1px solid #068dbe;
 }
 
-._nav2-links li:hover {
-    background-color: #006997;
-}
-
-li.active-item {
+._nav2-links li:hover, li.active-item {
     background-color: #006997;
 }
 
@@ -204,4 +200,61 @@ header i {
 .tabs li button:hover, .tabs li button.active {
     color: white;
     background-color: #154D61;
+}
+
+.tramites {
+    background-color: #edf6fa;
+    padding: 23px;
+}
+
+.tramites h2 {
+    color: #154D61;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 23px;
+    line-height: 23px;
+}
+
+.tramites-info {
+    display: flex;
+    justify-content: space-evenly;
+    color: #464646;
+}
+
+.descripcion {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.servicios {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.servicios li {
+    width: 100%;
+    list-style: none;
+    height: 56px;
+    background-color: #117DAC;
+    border-bottom: 1px solid white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 23px;
+}
+
+.servicios li a {
+    color: white;
+    font-size: 14px;
+}
+
+.servicios li a::after {
+    content: '▸';
+    position: absolute;
+    right: 23px;
+}
+
+.servicios li:hover {
+    background-color: #006997;
 }
