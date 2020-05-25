@@ -177,8 +177,11 @@ header i {
 .tabs li {
     color: #154D61;
     display: flex;
-    margin-right: 15px;
     width: 25%;
+}
+
+.tabs li:first-child {
+    margin-right: 15px;
 }
 
 .tabs li button {
@@ -205,15 +208,23 @@ header i {
 .tramites {
     background-color: #edf6fa;
     padding: 23px;
+    margin-bottom: 40px;
 }
 
-.tramites h2 {
-    color: #154D61;
+.tramites h2, .col2-info h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 23px;
     line-height: 23px;
+}
+
+.tramites h2 {
+    color: #154D61;
+}
+
+.col2-info h2 {
+    color: white;
 }
 
 .tramites-info {
@@ -222,7 +233,7 @@ header i {
     color: #464646;
 }
 
-.descripcion {
+.tramites-info .descripcion {
     flex: 1;
     margin-right: 40px;
 }
@@ -259,4 +270,39 @@ header i {
 
 .servicios li:hover {
     background-color: #006997;
+}
+
+.col2-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col2-info > div{
+    padding: 40px 50px;
+}
+
+.sabias-que {
+    background-color: #154D61;
+    width: 100%;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.preguntas-frecuentes {
+    background-color: #C44B12;
+    width: 100%;
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper div.descripcion {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.wrapper .button-more {
+    
 }
