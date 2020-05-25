@@ -234,19 +234,21 @@ header i {
 
 .servicios li {
     width: 100%;
-    list-style: none;
     height: 56px;
+    list-style: none;
     background-color: #117DAC;
     border-bottom: 1px solid white;
     position: relative;
-    display: flex;
-    align-items: center;
     padding: 0 23px;
 }
 
 .servicios li a {
     color: white;
     font-size: 14px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .servicios li a::after {
