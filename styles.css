@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header * {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+._navs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 80px 0 23px;
+}
+
+#nav1 {
+    background-color: #154d61;
+    height: 63px;
+}
+
+#nav2 {
+    background-color: #117dac;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    display: inline-block;
+}
+
+._nav1-links li {
+    padding-right: 23px;
+}
+
+._nav1-links li:last-child {
+    padding-right: 0;
+}
+
+._nav2-links li {
+    border-right: 1px solid #068dbe;
+}
+
+._nav2-links li:first-child {
+    border-left: 1px solid #068dbe;
+}
+
+._nav2-links li:hover {
+    background-color: #006997;
+}
+
+li.active-item {
+    background-color: #006997;
+}
+
+._nav2-links li a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    width: 160px;
+    height: 63px;
+    padding: 15px;
+    background: none;
+}
+
+header form {
+    margin-left: 23px;
+    display: flex;
+}
+
+header form::before {
+    margin-right: 23px;
+    content: '';
+    display: block;
+    height: 26px;
+    border-left: 1px solid white;
+}
+
+#edit-palabras-clave {
+    width: 226px;
+    height: 26px;
+    padding: 5px 30px 5px 10px;
+    color: #464646;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    margin-left: 23px;
+}
+
+.input-container {
+    position: relative;
+}
+
+header i {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    background: url(https://www.dnn.go.cr/themes/custom/dnn_theme/dist/images/ico-search-header.png);
+    width: 22px;
+    height: 16px;
+    top: 5px;
+    margin: 0 4px 0 0;
+    padding: 0;
+}
+
+.logo-container {
+    position: absolute;
+    left: 23px;
+    top: 0;
+}
