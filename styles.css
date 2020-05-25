@@ -298,11 +298,14 @@ header i {
     display: flex;
 }
 
-.wrapper div.descripcion {
+.wrapper div.descripcion:first-child {
     flex: 1;
-    margin-right: 15px;
 }
 
 .wrapper .button-more {
-    
+    flex: 1;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
