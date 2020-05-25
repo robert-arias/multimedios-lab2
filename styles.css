@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-header {
-    position: relative;
-}
-
 header * {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -17,29 +13,36 @@ header * {
     color: white;
 }
 
+.nav1-container {
+    background-color: #154d61;
+}
+
+.nav2-container {
+    background-color: #117dac;
+}
+
 ._navs {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 ._navs, .site-logo {
     padding: 0 80px 0 23px;
 }
 
+#nav1 {
+    height: 63px;
+    position: relative;
+}
+
 .site-logo {
     position: absolute;
     left: 0;
+    top: 0;
     z-index: 100;
-}
-
-#nav1 {
-    background-color: #154d61;
-    height: 63px;
-}
-
-#nav2 {
-    background-color: #117dac;
 }
 
 header ul {
