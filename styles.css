@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+header {
+    position: relative;
+}
+
 header * {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -17,7 +21,16 @@ header * {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+._navs, .site-logo {
     padding: 0 80px 0 23px;
+}
+
+.site-logo {
+    position: absolute;
+    left: 0;
+    z-index: 100;
 }
 
 #nav1 {
@@ -113,10 +126,4 @@ header i {
     top: 5px;
     margin: 0 4px 0 0;
     padding: 0;
-}
-
-.logo-container {
-    position: absolute;
-    left: 23px;
-    top: 0;
 }
