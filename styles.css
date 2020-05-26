@@ -279,6 +279,7 @@ header i {
 
 .col2-info > div{
     padding: 40px 50px;
+    color: white;
 }
 
 .sabias-que {
@@ -298,14 +299,63 @@ header i {
     display: flex;
 }
 
-.wrapper div.descripcion:first-child {
+.wrapper .descripcion {
     flex: 1;
 }
 
 .wrapper .button-more {
-    flex: 1;
     margin-left: 15px;
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+}
+
+.wrapper .button-more a {
+    width: 200px;
+    padding: 15px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    display: flex;
+    text-align: center;
+    margin: 0 0 0 auto;
+    position: relative;
+}
+
+.wrapper .button-more a:hover {
+    background-color: white;
+}
+
+.wrapper .button-more a::after {
+    content: '▸';
+    display: inline-flex;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.preguntas-frecuentes .wrapper .button-more a:hover {
+    color: #C44B12;
+}
+
+.sabias-que .wrapper .button-more a:hover {
+    color: #154D61;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+.footer-wrapper {
+    background-color: #154D61;
+}
+
+.footer-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 32px 85px;
+    background-image: url(https://www.dnn.go.cr/themes/custom/dnn_theme/dist/images/bg-footer.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
