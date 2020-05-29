@@ -79,7 +79,7 @@ header li {
     background-color: #006997;
 }
 
-._nav2-links li a{
+._nav2-links li a {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -117,8 +117,6 @@ header form::before {
 }
 
 header i {
-    display: block;
-    overflow: hidden;
     position: absolute;
     z-index: 10;
     right: 0;
@@ -156,6 +154,7 @@ header i {
 
 .main-data * {
     font-family: 'Lato', sans-serif;
+    line-height: 17px;
 }
 
 .main-data h1 {
@@ -175,7 +174,6 @@ header i {
 }
 
 .tabs li {
-    color: #154D61;
     display: flex;
     width: 25%;
 }
@@ -214,16 +212,18 @@ header i {
 .tramites h2, .col2-info h2 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
+    
     margin-bottom: 23px;
     line-height: 23px;
 }
 
 .tramites h2 {
+    font-size: 20px;
     color: #154D61;
 }
 
 .col2-info h2 {
+    font-size: 18px;
     color: white;
 }
 
@@ -343,10 +343,16 @@ header i {
 
 footer {
     margin-top: 80px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.footer-wrapper:first-child {
+    background-color: #154D61;
 }
 
 .footer-wrapper {
-    background-color: #154D61;
+    background-color: #206178;
 }
 
 .footer-nav {
@@ -358,4 +364,58 @@ footer {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
+    font-size: 14px;
+}
+
+.footer-nav > div {
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-nav > div li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-nav .titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.redes-sociales a {
+    color: white;
+}
+
+.contacto a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 32px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #C44B12;
+    border-bottom: 4px solid #E95B17;
+}
+
+.contacto a::after {
+    content: '▸';
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.last-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.last-footer li {
+    display: inline;
+    font-size: 14px;
+    padding: 0 15px;
 }
