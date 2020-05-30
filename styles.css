@@ -290,6 +290,7 @@ header i {
     height: 100%;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .servicios li a::after {
@@ -298,8 +299,30 @@ header i {
     right: 23px;
 }
 
+.servicios li a span {
+    position: relative;
+}
+
+.servicios li a span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
 .servicios li:hover {
     background-color: #006997;
+}
+
+.servicios li:hover span::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .col2-info {
